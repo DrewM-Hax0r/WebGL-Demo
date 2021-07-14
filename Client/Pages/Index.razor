@@ -1,0 +1,20 @@
+﻿@page "/"
+<MudAppBar Fixed="false" Dense="true">
+    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="ToggleDrawer" />
+    <MudText Typo="Typo.h5" Class="ml-3">WebGL Demo</MudText>
+    <MudAppBarSpacer />
+</MudAppBar>
+<MudDrawer @bind-Open="@DrawerOpen">
+    <MudNavMenu Class="mt-13">
+        <MudNavLink Match="NavLinkMatch.All" OnClick="@(() => ChangeScene("BasicSquare"))">White Square</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" OnClick="@(() => ChangeScene("GradientSquare"))">Gradient Square</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" OnClick="@(() => ChangeScene("AnimatedSquare"))">Animated Square</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" OnClick="@(() => ChangeScene("Cube"))">Animated Cube</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" OnClick="@(() => ChangeScene("TexturedCube"))">Textured Cube</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" OnClick="@(() => ChangeScene("ObjModel"))">Model</MudNavLink>
+        <MudNavLink Match="NavLinkMatch.All" OnClick="@(() => ChangeScene("Lighting"))">Lighting</MudNavLink>
+    </MudNavMenu>
+</MudDrawer>
+<div id="MainContent">
+    <AppCanvas @ref="Canvas" />
+</div>

@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Graphics\Models\Obj\Rappy\model.obj" />
+    <None Remove="Graphics\Shaders\LightedImage\shader.frag" />
+    <None Remove="Graphics\Shaders\LightedImage\shader.vert" />
+    <None Remove="Graphics\Shaders\BasicImage\shader.frag" />
+    <None Remove="Graphics\Shaders\BasicImage\shader.vert" />
+    <None Remove="Graphics\Shaders\GradientColor\shader.frag" />
+    <None Remove="Graphics\Shaders\GradientColor\shader.vert" />
+    <None Remove="Graphics\Shaders\SolidWhite\shader.frag" />
+    <None Remove="Graphics\Shaders\SolidWhite\shader.vert" />
+    <None Remove="Graphics\Textures\Images\Rappy.png" />
+    <None Remove="Graphics\Textures\Images\WebGL.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Graphics\Models\Obj\Rappy\model.obj" />
+    <EmbeddedResource Include="Graphics\Shaders\LightedImage\shader.frag" />
+    <EmbeddedResource Include="Graphics\Shaders\LightedImage\shader.vert" />
+    <EmbeddedResource Include="Graphics\Shaders\BasicImage\shader.frag" />
+    <EmbeddedResource Include="Graphics\Shaders\BasicImage\shader.vert" />
+    <EmbeddedResource Include="Graphics\Shaders\GradientColor\shader.frag" />
+    <EmbeddedResource Include="Graphics\Shaders\GradientColor\shader.vert" />
+    <EmbeddedResource Include="Graphics\Shaders\SolidWhite\shader.frag" />
+    <EmbeddedResource Include="Graphics\Shaders\SolidWhite\shader.vert" />
+    <EmbeddedResource Include="Graphics\Textures\Images\Rappy.png" />
+    <EmbeddedResource Include="Graphics\Textures\Images\WebGL.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.7" PrivateAssets="all" />
+    <PackageReference Include="MudBlazor" Version="5.0.13" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

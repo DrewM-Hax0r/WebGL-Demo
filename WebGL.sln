@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebGL.Server", "Server\WebGL.Server.csproj", "{31CF56C7-4447-4BA8-B96D-D6B373A41982}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebGL.Client", "Client\WebGL.Client.csproj", "{682B1389-7C28-4B40-8F27-A755BF4B2123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31CF56C7-4447-4BA8-B96D-D6B373A41982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CF56C7-4447-4BA8-B96D-D6B373A41982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CF56C7-4447-4BA8-B96D-D6B373A41982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CF56C7-4447-4BA8-B96D-D6B373A41982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682B1389-7C28-4B40-8F27-A755BF4B2123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682B1389-7C28-4B40-8F27-A755BF4B2123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682B1389-7C28-4B40-8F27-A755BF4B2123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682B1389-7C28-4B40-8F27-A755BF4B2123}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A121D40-B907-4E61-9644-B21B6526AAEA}
+	EndGlobalSection
+EndGlobal
